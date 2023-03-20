@@ -1,0 +1,1 @@
+/opt/cray/pe/gcc/11.2.0/bin/g++ CMakeFiles/gpu.dir/main.cu.o CMakeFiles/gpu.dir/gpu.cu.o -o gpu  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/opt/nvidia/hpc_sdk/Linux_x86_64/22.5/cuda/11.7/targets/x86_64-linux/lib/stubs" -L"/opt/nvidia/hpc_sdk/Linux_x86_64/22.5/cuda/11.7/targets/x86_64-linux/lib"
