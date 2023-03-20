@@ -1,8 +1,11 @@
 #!/bin/bash
-#SBATCH -N 1
+#SBATCH -A mp309
+#SBATCH -C gpu
+#SBATCH -q regular
+#SBATCH -t 1:00:00
 #SBATCH -n 1
-#SBATCH -c gpu
-#SBATCH -t 00:30:00
-#SBATCH --gres=gpu:1
+#SBATCH --ntasks-per-node=1
+#SBATCH -c 128
+#SBATCH --gpus-per-task=1
 
 ./gpu

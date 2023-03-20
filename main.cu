@@ -111,7 +111,7 @@ int main(int argc, char** argv) {
     // Initialize Particles
     int num_parts = find_int_arg(argc, argv, "-n", 1000);
     int part_seed = find_int_arg(argc, argv, "-s", 0);
-    double size = sqrt(density * num_parts);
+    double size = sqrt(density * num_parts); // Size of the simulation dimension (size x size)
 
     particle_t* parts = new particle_t[num_parts];
 
